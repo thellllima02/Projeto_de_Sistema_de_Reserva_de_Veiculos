@@ -1,0 +1,181 @@
+/* _content/Projeto/Views/Account/Login.cshtml.rz.scp.css */
+    /* Estilo do cabeçalho do formulário */
+  .login-container h2[b-aehvk5imyc] {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  form label[b-aehvk5imyc] {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+  /* Estilo para os campos de entrada */
+  .login-container input[type="text"][b-aehvk5imyc],
+  .login-container input[type="password"][b-aehvk5imyc] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do botão de login */
+  .login-container button[b-aehvk5imyc] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover[b-aehvk5imyc] {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo do link de registro */
+  .login-container a[b-aehvk5imyc] {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-container a:hover[b-aehvk5imyc] {
+    text-decoration: underline;
+  }
+  /* Estilo para a barra de navegação */
+  .navbar[b-aehvk5imyc] {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    text-align: left;
+  }
+  
+  /* Estilo para os links da navbar */
+  .navbar a[b-aehvk5imyc] {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover[b-aehvk5imyc] {
+    color: #007bff;
+  }
+  
+  /* Adicionando espaço no corpo da página para não sobrepor o navbar */
+  body[b-aehvk5imyc] {
+    padding-top: 60px; /* Ajuste conforme a altura da barra de navegação */
+  }
+  
+/* _content/Projeto/Views/Account/Register.cshtml.rz.scp.css */
+
+
+.form-group[b-qxanphzyqu] {
+    margin-bottom: 15px;
+}
+
+.form-group label[b-qxanphzyqu] {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"][b-qxanphzyqu],
+input[type="password"][b-qxanphzyqu] {
+  width: 50%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+  display: block; 
+  margin: 0 auto; 
+ 
+}
+
+.form-control[b-qxanphzyqu] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.btn-primary[b-qxanphzyqu] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:hover[b-qxanphzyqu] {
+    background-color: #0056b3;
+}
+
+.text-danger[b-qxanphzyqu] {
+    color: #dc3545;
+    margin-top: 10px;
+}
+/* _content/Projeto/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-s2go3x8bzm] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-s2go3x8bzm] {
+  color: #0077cc;
+}
+
+.btn-primary[b-s2go3x8bzm] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+.nav-pills .nav-link.active[b-s2go3x8bzm], .nav-pills .show > .nav-link[b-s2go3x8bzm] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-s2go3x8bzm] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-s2go3x8bzm] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-s2go3x8bzm] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-s2go3x8bzm] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-s2go3x8bzm] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+

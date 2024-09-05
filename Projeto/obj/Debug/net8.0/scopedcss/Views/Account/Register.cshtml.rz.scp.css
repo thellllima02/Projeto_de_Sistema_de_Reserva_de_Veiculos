@@ -1,0 +1,49 @@
+
+
+.form-group[b-qxanphzyqu] {
+    margin-bottom: 15px;
+}
+
+.form-group label[b-qxanphzyqu] {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"][b-qxanphzyqu],
+input[type="password"][b-qxanphzyqu] {
+  width: 50%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+  display: block; 
+  margin: 0 auto; 
+ 
+}
+
+.form-control[b-qxanphzyqu] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.btn-primary[b-qxanphzyqu] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:hover[b-qxanphzyqu] {
+    background-color: #0056b3;
+}
+
+.text-danger[b-qxanphzyqu] {
+    color: #dc3545;
+    margin-top: 10px;
+}

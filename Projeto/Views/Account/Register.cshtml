@@ -1,0 +1,29 @@
+@model RegisterViewModel
+
+<form asp-action="Register" method="post">
+    <div>
+        <label for="username">nome de usuário</label>
+        <input type="text" id="username" name="Username" asp-for="Username" required />
+    </div>
+    <div>
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="Password" asp-for="Password" required />
+    </div>
+    <div>
+        <label for="confirmPassword">Confirma senha</label>
+        <input type="password" id="confirmPassword" name="ConfirmPassword" asp-for="ConfirmPassword" required />
+    </div>
+
+    <!-- Exibe a mensagem de erro se houver -->
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="text-danger">
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <p>@error.ErrorMessage</p>
+            }
+        </div>
+    }
+
+    <button type="submit">Register</button>
+</form>
