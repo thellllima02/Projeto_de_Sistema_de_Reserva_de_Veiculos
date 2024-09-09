@@ -19,8 +19,8 @@ namespace Projeto.Controllers
             var userIdString = HttpContext.Session.GetString("UserId");
 
             if (string.IsNullOrEmpty(userIdString))
-            {
-                return Unauthorized("Usuario não estar logado.");
+            {    TempData["MensagemErro"] = "Você precisa estar logado para acessar página reserva.";
+                return RedirectToAction("Login", "Account");
             }
             var usuarioId = int.Parse(userIdString);
 

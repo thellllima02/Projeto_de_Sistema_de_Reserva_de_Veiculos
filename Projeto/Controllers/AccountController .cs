@@ -36,6 +36,7 @@ namespace Projeto.Controllers
             if (user == null)
             {
                 ModelState.AddModelError("", "Tentativa de login inválida.");
+                
                 return View();
             }
             // autenticar o usuário na sessão
