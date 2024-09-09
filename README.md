@@ -1,6 +1,4 @@
-Aqui está um exemplo de um arquivo `README.md` baseado no que você desenvolveu até agora:
 
----
 
 # Projeto de Sistema de Reserva de Veículos
 
