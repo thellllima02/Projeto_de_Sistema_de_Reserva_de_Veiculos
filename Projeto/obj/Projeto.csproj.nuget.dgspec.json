@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\Projeto\\Projeto.csproj": {}
+    "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\projeto\\Projeto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\Projeto\\Projeto.csproj": {
+    "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\projeto\\Projeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\Projeto\\Projeto.csproj",
+        "projectUniqueName": "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\projeto\\Projeto.csproj",
         "projectName": "Projeto",
-        "projectPath": "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\Projeto\\Projeto.csproj",
+        "projectPath": "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\projeto\\Projeto.csproj",
         "packagesPath": "C:\\Users\\lopes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\Projeto\\obj\\",
+        "outputPath": "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\projeto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lopes\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,6 +44,12 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
             },

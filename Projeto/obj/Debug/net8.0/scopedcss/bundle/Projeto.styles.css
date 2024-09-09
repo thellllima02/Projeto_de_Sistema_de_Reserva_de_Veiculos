@@ -79,54 +79,46 @@
   }
   
 /* _content/Projeto/Views/Account/Register.cshtml.rz.scp.css */
-
-
-.form-group[b-qxanphzyqu] {
-    margin-bottom: 15px;
-}
-
-.form-group label[b-qxanphzyqu] {
-    display: block;
-    margin-bottom: 5px;
+.register-container h2[b-qxanphzyqu] {
+    margin-bottom: 20px;
+    font-size: 28px;
     font-weight: bold;
-}
-input[type="text"][b-qxanphzyqu],
-input[type="password"][b-qxanphzyqu] {
-  width: 50%;
-  padding: 0.5em;
-  margin: 0.5em 0;
-  border: 1px solid #ccc;
-  border-radius: 0.25em;
-  display: block; 
-  margin: 0 auto; 
- 
+    color: #333;
 }
 
-.form-control[b-qxanphzyqu] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
+.register-container label[b-qxanphzyqu] {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #333;
 }
 
-.btn-primary[b-qxanphzyqu] {
+
+.register-container button[b-qxanphzyqu] {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     color: white;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
 }
 
-.btn-primary:hover[b-qxanphzyqu] {
+.register-container button:hover[b-qxanphzyqu] {
     background-color: #0056b3;
 }
 
-.text-danger[b-qxanphzyqu] {
-    color: #dc3545;
-    margin-top: 10px;
+.register-container a[b-qxanphzyqu] {
+    display: block;
+    margin-top: 1em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-container a:hover[b-qxanphzyqu] {
+    text-decoration: underline;
 }
 /* _content/Projeto/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification

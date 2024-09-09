@@ -1,34 +1,44 @@
 using Microsoft.EntityFrameworkCore;
 using Projeto.Data;
 using Projeto.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection")));
+// Adicionar suporte à sessão
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Tempo de expiração
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
-    builder.Services.AddDbContext<ApplicationDbContext>(options =>
+// Adicionar serviços ao contêiner
+builder.Services.AddControllersWithViews();
+
+// Configurar autenticação e cookies
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie("CookieAuth", options =>
+    {
+        options.LoginPath = "/Account/Login";
+        options.LogoutPath = "/Account/Logout";
+    });
+
+// Configurar o DbContext
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-    Console.WriteLine($"String de conexão: {connectionString}");
     options.UseMySQL(connectionString);
 });
 
 builder.Services.AddScoped<AuthService>();
 
-Console.WriteLine("Serviços adicionados ao contêiner.");
-
 var app = builder.Build();
 
-Console.WriteLine("Aplicativo construído.");
-
-// Configure the HTTP request pipeline.
+// Configurar o pipeline de requisição HTTP
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -37,14 +47,19 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+// Habilitar o middleware de sessão
+app.UseSession();
+
+// Habilitar autenticação e autorização
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Account}/{action=Login}/{id?}");
 
-Console.WriteLine("Pipeline de requisições HTTP configurado.");
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Reserva}/{action=Reservar}/{id?}");
 
 app.Run();
-
-Console.WriteLine("Aplicativo iniciado.");

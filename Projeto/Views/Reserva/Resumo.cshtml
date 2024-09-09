@@ -1,0 +1,20 @@
+@model Projeto.Models.Reserva
+
+@{
+    var quantidadeDias = (Model.DataFim - Model.DataInicio).Days;
+}
+<header>
+    <button type="button" onclick="window.location.href='@Url.Action("Logout", "Account")'" class="btn-sair">
+        Sair
+    </button>
+</header>
+<div class="resumo-container">
+    <h2>Resumo da Reserva</h2>
+    <p>Carro: @Model.Carro.Modelo</p>
+    <p>Data Início: @Model.DataInicio.ToShortDateString()</p>
+    <p>Data Fim: @Model.DataFim.ToShortDateString()</p>
+    <p>Diarias: @quantidadeDias</p>
+    <p>Valor da Diaria: @Model.Carro.ValorDiaria</p>
+    <p>Valor Total: R$ @Model.Valor</p>
+    <p>Status: @(Model.Status ? "Confirmada" : "Pendente")</p>
+</div>
