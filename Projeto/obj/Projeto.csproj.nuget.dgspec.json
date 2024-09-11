@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\projeto\\Projeto.csproj": {}
+    "C:\\Users\\thell\\Downloads\\Projeto_de_Sistema_de_Reserva_de_Veiculos\\projeto\\Projeto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\projeto\\Projeto.csproj": {
+    "C:\\Users\\thell\\Downloads\\Projeto_de_Sistema_de_Reserva_de_Veiculos\\projeto\\Projeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\projeto\\Projeto.csproj",
+        "projectUniqueName": "C:\\Users\\thell\\Downloads\\Projeto_de_Sistema_de_Reserva_de_Veiculos\\projeto\\Projeto.csproj",
         "projectName": "Projeto",
-        "projectPath": "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\projeto\\Projeto.csproj",
-        "packagesPath": "C:\\Users\\lopes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lopes\\OneDrive\\Área de Trabalho\\Projeto\\projeto\\obj\\",
+        "projectPath": "C:\\Users\\thell\\Downloads\\Projeto_de_Sistema_de_Reserva_de_Veiculos\\projeto\\Projeto.csproj",
+        "packagesPath": "C:\\Users\\thell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thell\\Downloads\\Projeto_de_Sistema_de_Reserva_de_Veiculos\\projeto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lopes\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\thell\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

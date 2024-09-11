@@ -67,6 +67,10 @@ No arquivo `appsettings.json`, configure a string de conexão para o seu banco d
 Execute as migrações do Entity Framework para garantir que o banco de dados esteja atualizado.
 
 ```bash
+dotnet tool install --global dotnet-ef
+```
+
+```bash
 dotnet ef database update
 ```
 
