@@ -114,6 +114,8 @@ namespace Projeto.Controllers
             return Convert.ToBase64String(hash);
         }
 
+        
+
 
     }
 
